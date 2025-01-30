@@ -1,0 +1,35 @@
+|---------------------------|
+|  GYMCAR                   |
+|---------------------------|
+|  A C++ wrapper for the    |
+|  "car racing" gym env.    |
+|---------------------------|
+=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
+
+This is just a tiny wrapper that allows you to use the "Car Racing" environment
+from Farama Gymnasium inside of a C++ program. I just threw this together really
+fast using claude because I needed it for a project.
+
+Also see https://gymnasium.farama.org/environments/box2d/car_racing/
+
+
+=== Building and running
+========================
+
+An example app is provided. To build and run it, you will need the Python
+development headers installed on your system. Then install some dependencies
+with pip, inside of a virtualenv:
+
+  $ python -m venv .venv
+  $ source venv/bin/activate
+  $ pip install -r requirements.txt
+
+Do the standard CMake procedure:
+
+  $ mkdir build && cd build
+  $ cmake ..
+  $ make
+
+Then run the example:
+
+  $ ./example
